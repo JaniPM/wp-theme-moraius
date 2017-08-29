@@ -1,0 +1,418 @@
+/*
+ * Theme Name: Moraius
+ * Theme URI: https://www.moraius.com/
+ * Description: Moraius web template
+ * Author: Jani Siivola
+ * Version: 1.0
+ * Tags: simple, single scrolling page
+ */
+
+body {
+	margin:0;
+	padding:0;
+  background:#FFF;
+  overflow-x:hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor:pointer;
+}
+
+a,button {
+  outline: none; /* Prevent ugly blue glow on chrome and safari */
+}
+
+/* Globals type styling */
+h1, h2, h3, h4, h5, h6, p, label, .btn, a {
+  font-family: Montserrat;
+}
+
+/* Site container width */
+.container {
+	max-width: 1170px;
+}
+
+/* ---------------------- Sections --------------------------- */
+
+.section {
+  width:100%;
+	clear:both;
+	background: 50% 50% no-repeat;
+	padding:0 50px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+
+.section .container{
+	padding-left:0;
+	padding-right:0;
+}
+
+.section__placeholder {
+	height: 200px;
+	border: #000 1px dotted;
+}
+
+/* Container Sizes */
+
+.container_size_xl{
+	padding:150px 50px;
+}
+.container_size_lg{
+	padding:100px 50px;
+}
+.container_size_md{
+	padding:50px;
+}
+.container_size_sm{
+	padding:20px 50px;
+}
+
+/* Headers */
+
+.section__header_lg {
+	font-size: 32px;
+	font-weight: 900;
+}
+
+.section__header {
+	font-weight: 400;
+}
+
+/* Dark modifier */
+
+.section_dark{
+	color: rgba(255,255,255,.9);
+	border-color: rgba(255,255,255,.9);
+	background-color: #1F0F5D;
+}
+.section_dark button:hover{
+	color:rgba(255,255,255,.9);
+}
+.section_dark .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+
+/* Medium dark modifier */
+.section_medium-dark {
+  background-color: #e5e5e5;
+}
+
+/* Light theme */
+
+.section_light{
+	color:rgba(0,0,0,.8);
+}
+.section_light button:hover{
+	color:rgba(0,0,0,.7);
+}
+.section_light a{
+	color:rgba(0,0,0,.6);
+}
+.section_light a:hover{
+	color:rgba(0,0,0,1);
+}
+
+/* Bloc image backgrounds */
+
+.section_bg_main {
+	background:
+		linear-gradient(0deg,
+										rgba(180,200,200,0.6),
+										rgba(180,200,200,0.6)),
+										url("img/winter-mountain.jpg");
+	background-color:#47454B;
+	background-size:cover;
+}
+
+/* = NavBar
+-------------------------------------------------------------- */
+
+.navbar{
+	margin-bottom: 0;
+	z-index:1;
+}
+.navbar-brand{
+	height: 60px;
+	font-size:25px;
+	font-weight:normal;
+	font-weight:600;
+	content: url('img/moraius_white.png');
+}
+/*
+.navbar-brand img{
+	max-height: 200px;
+	margin: 0 5px 0 0;
+	display:inline;
+}*/
+.navbar .nav{
+	padding-top: 2px;
+	margin-right: -16px;
+	float:right;
+	z-index:1;
+}
+.nav > li{
+	float:left;
+	margin-top:4px;
+	font-size:16px;
+}
+
+.navbar a{
+	color:rgba(255,255,255,.6);
+}
+.navbar a:hover{
+	color:rgba(255,255,255,1);
+}
+.navbar-nav .open .dropdown-menu > li > a{
+	text-align: inherit;
+}
+.nav > li a:hover, .nav > li a:focus{
+	background:transparent;
+}
+.navbar-toggle{
+	margin: 10px 10px 0 0;
+	border: 0px;
+}
+.navbar-toggle:hover{
+	background:transparent;
+}
+.navbar-toggle .icon-bar{
+	background-color: rgba(0,0,0,.5);
+	width: 26px;
+}
+
+@media (min-width: 768px){
+	.site-navigation{
+		position:absolute;
+		top:50%;
+		right:20px;
+		transform:translate(0, -50%);
+		-webkit-transform:translateY(-50%);
+	}
+	.nav-center{
+		text-align:center;
+	}
+	.nav-center .navbar-header{
+		width:100%;
+	}
+	.nav-center .navbar-header, .nav-center .navbar-brand, .nav-center .nav > li{
+		float: none;
+		display:inline-block;
+	}
+	.nav-center .site-navigation{
+		position:relative;
+		width:100%;
+		margin-top:20px;
+	}
+}
+.nav > li > .dropdown a{
+	background: none;
+	display: block;
+	padding: 14px 15px;
+}
+
+nav .caret{
+	margin: 0 5px;
+}
+
+/* = Bric adjustment margins
+-------------------------------------------------------------- */
+
+.mg-md{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
+}
+
+/* = Buttons
+-------------------------------------------------------------- */
+
+.btn{
+	margin: 0 5px 5px 0;
+}
+.btn-d,.btn-d:hover,.btn-d:focus{
+	color:#FFF;
+	background:rgba(0,0,0,.3);
+}
+
+/* Prevent ugly blue glow on chrome and safari */
+button {
+	outline: none;
+}
+
+.btn-wire{
+	background:transparent;
+	border:2px solid transparent;
+}
+
+.btn-wire:hover {
+	background:transparent;
+	border:2px solid transparent;
+}
+
+.btn-wire_light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-wire_light:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-wire_dark, a.btn-wire_dark {
+	color: #1F0F5D;
+	border-color: #1F0F5D;
+}
+
+.btn-wire_dark:hover, a.btn-wire_dark:hover {
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+
+.btn-xl {
+	padding: 16px 40px;
+	font-size: 28px;
+}
+.dropdown a .caret {
+	margin:0 0 0 5px
+}
+
+/* = Icons
+-------------------------------------------------------------- */
+
+.icon {
+  color: #2e6989;
+	border-color:#2e6989;
+}
+
+.icon_md{
+	font-size:30px;
+}
+
+.icon_xl{
+	font-size:100px;
+}
+
+/* ScrollToTop button */
+
+.scrollToTop{
+	width:40px;
+	height:40px;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	opacity: 0;
+	z-index: 500;
+	transition: all .3s ease-in-out;
+}
+.scrollToTop span{
+	margin-top: 6px;
+}
+.showScrollTop{
+	font-size: 14px;
+	opacity: 1;
+}
+
+/* = Mobile adjustments
+-------------------------------------------------------------- */
+@media (max-width: 1024px)
+{
+  .section{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px)
+{
+  .container{
+    width:100%;
+  }
+
+  .page-container {
+    overflow-x: hidden;
+    position: relative;
+  } /* Prevent unwanted side scroll on mobile */
+}
+
+@media (max-width: 767px)
+{
+  .page-container{
+    overflow-x: hidden;
+    position:relative;
+  }
+
+  h1,h2,h3,h4,h5,h6,p {
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .section {
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-background-size: auto 200%;
+    -moz-background-size: auto 200%;
+    -o-background-size: auto 200%;
+    background-size: auto 200%;
+  }
+
+  .navbar .nav{
+      padding-top: 0;
+      border-top:1px solid rgba(0,0,0,.2);
+      float:none;
+  }
+  .navbar.row{
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .site-navigation{
+   position:inherit;
+   transform:none;
+   -webkit-transform:none;
+   -ms-transform:none;
+  }
+
+  .nav > li{
+      margin-top: 0;
+      border-bottom:1px solid rgba(0,0,0,.1);
+      background:rgba(0,0,0,.05);
+      text-align: left;
+      padding-left:15px;
+      width:100%;
+  }
+
+  .nav > li:hover{
+      background:rgba(0,0,0,.08);
+  }
+
+  .navbar-collapse{
+      padding:0;
+      overflow-x: hidden;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+
+  .section-xxl,.section-xl,.section-lg{
+    padding: 40px 0;
+  }
+
+  .section-sm,.section-md{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
