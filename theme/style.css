@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6, p, label, .btn, a {
 		linear-gradient(0deg,
 										rgba(180,200,200,0.6),
 										rgba(180,200,200,0.6)),
-										url("img/winter-mountain.jpg");
+										url("img/header-bg.png");
 	background-color:#47454B;
 	background-size:cover;
 }
